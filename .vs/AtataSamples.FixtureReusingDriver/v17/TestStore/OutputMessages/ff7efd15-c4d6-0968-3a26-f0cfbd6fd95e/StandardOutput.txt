@@ -1,0 +1,100 @@
+2022-04-01 08:09:56.1764  INFO Starting test: Mistal.FixtureReusingDriver.UserStory.Shipping_Method_NextDayAir_Should_Be_Selected
+2022-04-01 08:09:56.1778 TRACE > Set up AtataContext
+2022-04-01 08:09:56.1780 TRACE - Set: BaseUrl=https://demo.nopcommerce.com
+2022-04-01 08:09:56.1781 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2022-04-01 08:09:56.1782 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2022-04-01 08:09:56.1783 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2022-04-01 08:09:56.1784 TRACE - Set: Culture=en-US
+2022-04-01 08:09:56.1788 TRACE - Set: Artifacts=C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\bin\Debug\netcoreapp3.1\artifacts\2022-04-01 08_09_12\UserStory\Shipping_Method_NextDayAir_Should_Be_Selected
+2022-04-01 08:09:56.1794 TRACE - Set: DriverService=ChromeDriverService on port 56688
+2022-04-01 08:09:57.3573 TRACE - Set: Driver=ChromeDriver (alias=chrome)
+2022-04-01 08:09:57.3576 TRACE < Set up AtataContext (1.179s)
+2022-04-01 08:09:57.3578  INFO Go to "Sign In" page
+2022-04-01 08:09:57.3626  INFO Go to URL "https://demo.nopcommerce.com/login"
+2022-04-01 08:09:58.6627 TRACE > Execute trigger VerifyH1Attribute { Index=-1, Values="Welcome, Please Sign In!", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page
+2022-04-01 08:09:58.6638  INFO - > Assert: "Welcome, Please Sign In!" <h1> heading should be present
+2022-04-01 08:09:58.6641 TRACE - - > Find visible element by XPath ".//h1[normalize-space(.) = 'Welcome, Please Sign In!']" in ChromeDriver
+2022-04-01 08:09:58.6884 TRACE - - < Find visible element by XPath ".//h1[normalize-space(.) = 'Welcome, Please Sign In!']" in ChromeDriver (0.024s) >> Element { Id=164a3327-158b-43cd-b4ff-0ada841d90c7 }
+2022-04-01 08:09:58.6887  INFO - < Assert: "Welcome, Please Sign In!" <h1> heading should be present (0.024s)
+2022-04-01 08:09:58.6888 TRACE < Execute trigger VerifyH1Attribute { Index=-1, Values="Welcome, Please Sign In!", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page (0.026s)
+2022-04-01 08:09:58.6890  INFO > Set "basic1_user@mail.com" to "Email" email input
+2022-04-01 08:09:58.6893 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" email input
+2022-04-01 08:09:58.6895 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Email" email input
+2022-04-01 08:09:58.6904 TRACE - - - > Find visible element by XPath ".//*[normalize-space(@id) = 'Email']/descendant-or-self::input[@type='email']" in ChromeDriver
+2022-04-01 08:09:58.7246 TRACE - - - < Find visible element by XPath ".//*[normalize-space(@id) = 'Email']/descendant-or-self::input[@type='email']" in ChromeDriver (0.034s) >> Element { Id=eccc4306-b185-4ce9-9e21-984a4ac6c3a2 }
+2022-04-01 08:09:58.7249 TRACE - - - > Clear element { Id=eccc4306-b185-4ce9-9e21-984a4ac6c3a2 }
+2022-04-01 08:09:58.7514 TRACE - - - < Clear element { Id=eccc4306-b185-4ce9-9e21-984a4ac6c3a2 } (0.026s)
+2022-04-01 08:09:58.7516 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Email" email input (0.062s)
+2022-04-01 08:09:58.7519 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Email" email input
+2022-04-01 08:09:58.7520 TRACE - - - > Send keys "basic1_user@mail.com" to element { Id=eccc4306-b185-4ce9-9e21-984a4ac6c3a2 }
+2022-04-01 08:09:58.7993 TRACE - - - < Send keys "basic1_user@mail.com" to element { Id=eccc4306-b185-4ce9-9e21-984a4ac6c3a2 } (0.047s)
+2022-04-01 08:09:58.7996 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Email" email input (0.047s)
+2022-04-01 08:09:58.7997 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" email input (0.110s)
+2022-04-01 08:09:58.7998  INFO < Set "basic1_user@mail.com" to "Email" email input (0.110s)
+2022-04-01 08:09:58.7999  INFO > Set "user123!" to "Password" password input
+2022-04-01 08:09:58.8001 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input
+2022-04-01 08:09:58.8002 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input
+2022-04-01 08:09:58.8005 TRACE - - - > Find visible element by XPath ".//*[normalize-space(@id) = 'Password']/descendant-or-self::input[@type='password']" in ChromeDriver
+2022-04-01 08:09:58.8253 TRACE - - - < Find visible element by XPath ".//*[normalize-space(@id) = 'Password']/descendant-or-self::input[@type='password']" in ChromeDriver (0.024s) >> Element { Id=254bb7d3-019e-49f1-aacc-74da749cf105 }
+2022-04-01 08:09:58.8257 TRACE - - - > Clear element { Id=254bb7d3-019e-49f1-aacc-74da749cf105 }
+2022-04-01 08:09:58.8525 TRACE - - - < Clear element { Id=254bb7d3-019e-49f1-aacc-74da749cf105 } (0.026s)
+2022-04-01 08:09:58.8527 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input (0.052s)
+2022-04-01 08:09:58.8530 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input
+2022-04-01 08:09:58.8531 TRACE - - - > Send keys "user123!" to element { Id=254bb7d3-019e-49f1-aacc-74da749cf105 }
+2022-04-01 08:09:58.9002 TRACE - - - < Send keys "user123!" to element { Id=254bb7d3-019e-49f1-aacc-74da749cf105 } (0.047s)
+2022-04-01 08:09:58.9005 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input (0.047s)
+2022-04-01 08:09:58.9007 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input (0.100s)
+2022-04-01 08:09:58.9008  INFO < Set "user123!" to "Password" password input (0.100s)
+2022-04-01 08:09:58.9010  INFO > Click "Login" button
+2022-04-01 08:09:58.9012 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Login" button
+2022-04-01 08:09:58.9016 TRACE - - > Find visible element by XPath ".//*[contains(concat(' ', normalize-space(@class), ' '), ' login-button ')]/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver
+2022-04-01 08:09:58.9221 TRACE - - < Find visible element by XPath ".//*[contains(concat(' ', normalize-space(@class), ' '), ' login-button ')]/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver (0.020s) >> Element { Id=f9b62574-69bf-4781-ac4b-04c403aa046e }
+2022-04-01 08:09:58.9225 TRACE - - > Click element { Id=f9b62574-69bf-4781-ac4b-04c403aa046e }
+2022-04-01 08:09:59.5966 TRACE - - < Click element { Id=f9b62574-69bf-4781-ac4b-04c403aa046e } (0.674s)
+2022-04-01 08:09:59.5976 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Login" button (0.696s)
+2022-04-01 08:09:59.5981  INFO < Click "Login" button (0.697s)
+2022-04-01 08:09:59.5987  INFO Go to "Shipping Method" page
+2022-04-01 08:09:59.6019  INFO Go to URL "https://demo.nopcommerce.com/onepagecheckout#opc-shipping_method"
+2022-04-01 08:10:00.0492 TRACE > Execute trigger VerifyH2Attribute { Index=-1, Values="Shipping method", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Shipping Method" page
+2022-04-01 08:10:00.0500  INFO - > Assert: "Shipping method" <h2> heading should be present
+2022-04-01 08:10:00.0503 TRACE - - > Find visible element by XPath ".//h2[normalize-space(.) = 'Shipping method']" in ChromeDriver
+2022-04-01 08:10:05.0628 TRACE - - < Find visible element by XPath ".//h2[normalize-space(.) = 'Shipping method']" in ChromeDriver (5.012s) >> OpenQA.Selenium.NoSuchElementException: Unable to locate visible element:...
+2022-04-01 08:10:05.0701  INFO - < Assert: "Shipping method" <h2> heading should be present (5.020s) >> NUnit.Framework.AssertionException: Wrong "Shipping method" <h2> heading presence...
+2022-04-01 08:10:05.0705 TRACE < Execute trigger VerifyH2Attribute { Index=-1, Values="Shipping method", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Shipping Method" page (5.021s) >> NUnit.Framework.AssertionException: Wrong "Shipping method" <h2> heading presence...
+2022-04-01 08:10:05.0710  INFO > Clean up AtataContext
+2022-04-01 08:10:05.0711 TRACE - > Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-04-01 08:10:05.0714 TRACE - < Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent (0.000s)
+2022-04-01 08:10:05.0715 TRACE - > Execute event handler TakeScreenshotOnNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-04-01 08:10:05.0716 TRACE - < Execute event handler TakeScreenshotOnNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent (0.000s)
+2022-04-01 08:10:05.0717 TRACE - > Execute event handler LogNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-04-01 08:10:05.0718 ERROR - - Wrong "Shipping method" <h2> heading presence
+Expected: should be present
+  Actual: unable to locate visible element:
+- By: XPath ".//h2[normalize-space(.) = 'Shipping method']"
+- Search time: 5.012s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.VerificationProvider`2.ReportFailure(String message, Exception exception)
+   at Atata.VerificationProvider`2.Atata.IVerificationProvider<TOwner>.ReportFailure(String message, Exception exception)
+   at Atata.IUIComponentVerificationProviderExtensions.<>c__DisplayClass2_0`2.<VerifyExistence>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.IUIComponentVerificationProviderExtensions.VerifyExistence[TComponent,TOwner](IUIComponentVerificationProvider`2 should, String expectedMessage, String verificationStateName, Nullable`1 visibility)
+   at Atata.IUIComponentVerificationProviderExtensions.BePresent[TComponent,TOwner](IUIComponentVerificationProvider`2 should)
+   at Atata.VerifyHeadingTriggerAttribute.Verify[TH,TOwner](TriggerContext`1 context, String[] values)
+   at Atata.VerifyH2Attribute.OnExecute[TOwner](TriggerContext`1 context, String[] values)
+   at Atata.TermVerificationTriggerAttribute.Execute[TOwner](TriggerContext`1 context)
+   at Atata.UIComponentTriggerSet`1.<>c__DisplayClass18_3.<Execute>b__2()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.UIComponentTriggerSet`1.Execute(TriggerEvents on)
+   at Atata.PageObject`1.Init()
+   at Atata.AtataNavigator.GoToFollowingPageObject[T](UIComponent currentPageObject, T nextPageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Atata.Go.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Mistal.FixtureReusingDriver.Pages.ShippingMethod() in C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\Pages.cs:line 13
+   at Mistal.FixtureReusingDriver.UserStory.Shipping_Method_NextDayAir_Should_Be_Selected() in C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\UserStory.cs:line 152
+
+2022-04-01 08:10:05.0720 TRACE - < Execute event handler LogNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent (0.000s)
+2022-04-01 08:10:05.2207  INFO < Clean up AtataContext (0.149s)
+2022-04-01 08:10:05.2209  INFO Finished test (9.045s)
+2022-04-01 08:10:05.2210  INFO Pure test execution time: 7.713s

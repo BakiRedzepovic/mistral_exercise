@@ -1,0 +1,47 @@
+2022-04-01 09:54:03.6467  INFO Starting test: Mistal.FixtureReusingDriver.SmokeTestRegistration.Register_Page_Required_First_Name_Field_Validation
+2022-04-01 09:54:03.6468 TRACE > Set up AtataContext
+2022-04-01 09:54:03.6469 TRACE - Set: BaseUrl=https://demo.nopcommerce.com
+2022-04-01 09:54:03.6470 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2022-04-01 09:54:03.6471 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2022-04-01 09:54:03.6471 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2022-04-01 09:54:03.6474 TRACE - Set: Culture=en-US
+2022-04-01 09:54:03.6482 TRACE - Set: Artifacts=C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\bin\Debug\netcoreapp3.1\artifacts\2022-04-01 09_53_43\SmokeTestRegistration\Register_Page_Required_First_Name_Field_Validation
+2022-04-01 09:54:03.6486 TRACE - Set: DriverService=ChromeDriverService on port 49324
+2022-04-01 09:54:04.8034 TRACE - Set: Driver=ChromeDriver (alias=chrome)
+2022-04-01 09:54:04.8037 TRACE < Set up AtataContext (1.156s)
+2022-04-01 09:54:04.8041  INFO Go to "Register" page
+2022-04-01 09:54:04.8085  INFO Go to URL "https://demo.nopcommerce.com/register"
+2022-04-01 09:54:05.4801 TRACE > Execute trigger VerifyH1Attribute { Index=-1, Values="Register", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Register" page
+2022-04-01 09:54:05.4851  INFO - > Assert: "Register" <h1> heading should be present
+2022-04-01 09:54:05.4858 TRACE - - > Find visible element by XPath ".//h1[normalize-space(.) = 'Register']" in ChromeDriver
+2022-04-01 09:54:05.5303 TRACE - - < Find visible element by XPath ".//h1[normalize-space(.) = 'Register']" in ChromeDriver (0.044s) >> Element { Id=a31efe6b-414f-4dc9-8a96-2b1d00090e9e }
+2022-04-01 09:54:05.5308  INFO - < Assert: "Register" <h1> heading should be present (0.045s)
+2022-04-01 09:54:05.5311 TRACE < Execute trigger VerifyH1Attribute { Index=-1, Values="Register", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Register" page (0.050s)
+2022-04-01 09:54:05.5316  INFO > Set "jqqkfapgtsnpsvn" to "Last Name" text input
+2022-04-01 09:54:05.5319 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Last Name" text input
+2022-04-01 09:54:05.5322 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Last Name" text input
+2022-04-01 09:54:05.5329 TRACE - - - > Find visible element by XPath ".//*[normalize-space(@id) = 'LastName']/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver
+2022-04-01 09:54:05.5563 TRACE - - - < Find visible element by XPath ".//*[normalize-space(@id) = 'LastName']/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver (0.023s) >> Element { Id=0c188bd9-6f1b-4925-a6b6-1cb4616346c5 }
+2022-04-01 09:54:05.5566 TRACE - - - > Clear element { Id=0c188bd9-6f1b-4925-a6b6-1cb4616346c5 }
+2022-04-01 09:54:05.5844 TRACE - - - < Clear element { Id=0c188bd9-6f1b-4925-a6b6-1cb4616346c5 } (0.027s)
+2022-04-01 09:54:05.5846 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Last Name" text input (0.052s)
+2022-04-01 09:54:05.5849 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Last Name" text input
+2022-04-01 09:54:05.5851 TRACE - - - > Send keys "jqqkfapgtsnpsvn" to element { Id=0c188bd9-6f1b-4925-a6b6-1cb4616346c5 }
+2022-04-01 09:54:05.6413 TRACE - - - < Send keys "jqqkfapgtsnpsvn" to element { Id=0c188bd9-6f1b-4925-a6b6-1cb4616346c5 } (0.056s)
+2022-04-01 09:54:05.6416 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Last Name" text input (0.056s)
+2022-04-01 09:54:05.6417 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Last Name" text input (0.109s)
+2022-04-01 09:54:05.6419  INFO < Set "jqqkfapgtsnpsvn" to "Last Name" text input (0.110s)
+2022-04-01 09:54:05.6421  INFO > Click "Registration" button
+2022-04-01 09:54:05.6423 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Registration" button
+2022-04-01 09:54:05.6428 TRACE - - > Find visible element by XPath ".//*[normalize-space(@id) = 'register-button']/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver
+2022-04-01 09:54:05.6624 TRACE - - < Find visible element by XPath ".//*[normalize-space(@id) = 'register-button']/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver (0.019s) >> Element { Id=7e7c27d5-2aa7-43ba-87a7-280ffe1818d5 }
+2022-04-01 09:54:05.6627 TRACE - - > Click element { Id=7e7c27d5-2aa7-43ba-87a7-280ffe1818d5 }
+2022-04-01 09:54:05.7130 TRACE - - < Click element { Id=7e7c27d5-2aa7-43ba-87a7-280ffe1818d5 } (0.050s)
+2022-04-01 09:54:05.7133 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Registration" button (0.071s)
+2022-04-01 09:54:05.7141  INFO < Click "Registration" button (0.071s)
+2022-04-01 09:54:05.7148  INFO > Clean up AtataContext
+2022-04-01 09:54:05.7152 TRACE - > Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-04-01 09:54:05.7156 TRACE - < Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent (0.000s)
+2022-04-01 09:54:05.8992  INFO < Clean up AtataContext (0.184s)
+2022-04-01 09:54:05.8995  INFO Finished test (2.253s)
+2022-04-01 09:54:05.8997  INFO Pure test execution time: 0.910s

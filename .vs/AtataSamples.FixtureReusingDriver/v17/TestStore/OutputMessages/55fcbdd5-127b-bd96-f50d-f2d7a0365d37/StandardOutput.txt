@@ -1,0 +1,38 @@
+2022-03-31 22:20:05.7781  INFO Starting test: AtataSamples.FixtureReusingDriver.UserStory_1.Home_Page_Search_Using_First_Characters_Of_Name
+2022-03-31 22:20:05.7785 TRACE > Set up AtataContext
+2022-03-31 22:20:05.7786 TRACE - Set: BaseUrl=https://demo.nopcommerce.com
+2022-03-31 22:20:05.7788 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2022-03-31 22:20:05.7789 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2022-03-31 22:20:05.7791 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2022-03-31 22:20:05.7792 TRACE - Set: Culture=en-US
+2022-03-31 22:20:05.7795 TRACE - Set: Artifacts=C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\bin\Debug\netcoreapp3.1\artifacts\2022-03-31 22_20_01\UserStory_1\Home_Page_Search_Using_First_Characters_Of_Name
+2022-03-31 22:20:05.7798 TRACE - Set: Driver=ChromeDriver
+2022-03-31 22:20:05.7799 TRACE < Set up AtataContext (0.001s)
+2022-03-31 22:20:05.7821  INFO Go to "Home" page
+2022-03-31 22:20:05.8003  INFO Go to URL "https://demo.nopcommerce.com/"
+2022-03-31 22:20:06.5123 TRACE > Execute trigger VerifyH2Attribute { Index=-1, Values="Welcome to our store", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Home" page
+2022-03-31 22:20:06.5149  INFO - > Assert: "Welcome to our store" <h2> heading should be present
+2022-03-31 22:20:06.5156 TRACE - - > Find visible element by XPath ".//h2[normalize-space(.) = 'Welcome to our store']" in ChromeDriver
+2022-03-31 22:20:06.5821 TRACE - - < Find visible element by XPath ".//h2[normalize-space(.) = 'Welcome to our store']" in ChromeDriver (0.066s) >> Element { Id=c0495f64-8511-4526-99a0-032631194556 }
+2022-03-31 22:20:06.5827  INFO - < Assert: "Welcome to our store" <h2> heading should be present (0.067s)
+2022-03-31 22:20:06.5836 TRACE < Execute trigger VerifyH2Attribute { Index=-1, Values="Welcome to our store", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Home" page (0.071s)
+2022-03-31 22:20:06.5849  INFO > Set "htc" to "Search" text input
+2022-03-31 22:20:06.5857 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Search" text input
+2022-03-31 22:20:06.5862 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Search" text input
+2022-03-31 22:20:06.5949 TRACE - - - > Find visible element by XPath ".//*[normalize-space(@id) = 'small-searchterms']/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver
+2022-03-31 22:20:06.6287 TRACE - - - < Find visible element by XPath ".//*[normalize-space(@id) = 'small-searchterms']/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver (0.033s) >> Element { Id=6ffe0ac5-b648-422e-901c-2839258e7040 }
+2022-03-31 22:20:06.6290 TRACE - - - > Clear element { Id=6ffe0ac5-b648-422e-901c-2839258e7040 }
+2022-03-31 22:20:06.6556 TRACE - - - < Clear element { Id=6ffe0ac5-b648-422e-901c-2839258e7040 } (0.026s)
+2022-03-31 22:20:06.6559 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Search" text input (0.069s)
+2022-03-31 22:20:06.6562 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Search" text input
+2022-03-31 22:20:06.6565 TRACE - - - > Send keys "htc" to element { Id=6ffe0ac5-b648-422e-901c-2839258e7040 }
+2022-03-31 22:20:06.6891 TRACE - - - < Send keys "htc" to element { Id=6ffe0ac5-b648-422e-901c-2839258e7040 } (0.032s)
+2022-03-31 22:20:06.6894 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Search" text input (0.033s)
+2022-03-31 22:20:06.6895 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Search" text input (0.103s)
+2022-03-31 22:20:06.6897  INFO < Set "htc" to "Search" text input (0.104s)
+2022-03-31 22:20:11.6976  INFO > Clean up AtataContext
+2022-03-31 22:20:11.6992 TRACE - > Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-03-31 22:20:11.7003 TRACE - < Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent (0.000s)
+2022-03-31 22:20:11.7175  INFO < Clean up AtataContext (0.019s)
+2022-03-31 22:20:11.7179  INFO Finished test (5.947s)
+2022-03-31 22:20:11.7181  INFO Pure test execution time: 5.917s

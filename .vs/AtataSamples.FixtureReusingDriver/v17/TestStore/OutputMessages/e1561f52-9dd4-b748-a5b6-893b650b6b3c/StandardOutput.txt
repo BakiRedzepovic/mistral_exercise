@@ -1,0 +1,66 @@
+2022-03-31 23:00:52.5530  INFO Starting test: AtataSamples.FixtureReusingDriver.UserStory_1.Home_Page_Search_Using_First_Characters_Of_Name
+2022-03-31 23:00:52.5532 TRACE > Set up AtataContext
+2022-03-31 23:00:52.5533 TRACE - Set: BaseUrl=https://demo.nopcommerce.com
+2022-03-31 23:00:52.5534 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2022-03-31 23:00:52.5535 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2022-03-31 23:00:52.5536 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2022-03-31 23:00:52.5537 TRACE - Set: Culture=en-US
+2022-03-31 23:00:52.5568 TRACE - Set: Artifacts=C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\bin\Debug\netcoreapp3.1\artifacts\2022-03-31 23_00_48\UserStory_1\Home_Page_Search_Using_First_Characters_Of_Name
+2022-03-31 23:00:52.5571 TRACE - Set: Driver=ChromeDriver
+2022-03-31 23:00:52.5573 TRACE < Set up AtataContext (0.004s)
+2022-03-31 23:00:52.5604  INFO Go to "Home" page
+2022-03-31 23:00:52.5647  INFO Go to URL "https://demo.nopcommerce.com/"
+2022-03-31 23:00:53.3360 TRACE > Execute trigger VerifyH2Attribute { Index=-1, Values="Welcome to our store", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Home" page
+2022-03-31 23:00:53.3393  INFO - > Assert: "Welcome to our store" <h2> heading should be present
+2022-03-31 23:00:53.3407 TRACE - - > Find visible element by XPath ".//h2[normalize-space(.) = 'Welcome to our store']" in ChromeDriver
+2022-03-31 23:00:53.3875 TRACE - - < Find visible element by XPath ".//h2[normalize-space(.) = 'Welcome to our store']" in ChromeDriver (0.046s) >> Element { Id=bd831cb3-d812-4f3b-a009-126547340113 }
+2022-03-31 23:00:53.3891  INFO - < Assert: "Welcome to our store" <h2> heading should be present (0.049s)
+2022-03-31 23:00:53.3927 TRACE < Execute trigger VerifyH2Attribute { Index=-1, Values="Welcome to our store", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Home" page (0.056s)
+2022-03-31 23:00:53.3964  INFO > Set "htc" to "Search" text input
+2022-03-31 23:00:53.3969 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Search" text input
+2022-03-31 23:00:53.3983 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Search" text input
+2022-03-31 23:00:53.4062 TRACE - - - > Find visible element by XPath ".//*[normalize-space(@id) = 'small-searchterms']/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver
+2022-03-31 23:00:53.4487 TRACE - - - < Find visible element by XPath ".//*[normalize-space(@id) = 'small-searchterms']/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver (0.042s) >> Element { Id=b01a60ad-b874-4e29-a73f-a66b10c41be6 }
+2022-03-31 23:00:53.4492 TRACE - - - > Clear element { Id=b01a60ad-b874-4e29-a73f-a66b10c41be6 }
+2022-03-31 23:00:53.4802 TRACE - - - < Clear element { Id=b01a60ad-b874-4e29-a73f-a66b10c41be6 } (0.030s)
+2022-03-31 23:00:53.4804 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Search" text input (0.082s)
+2022-03-31 23:00:53.4808 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Search" text input
+2022-03-31 23:00:53.4810 TRACE - - - > Send keys "htc" to element { Id=b01a60ad-b874-4e29-a73f-a66b10c41be6 }
+2022-03-31 23:00:53.5188 TRACE - - - < Send keys "htc" to element { Id=b01a60ad-b874-4e29-a73f-a66b10c41be6 } (0.037s)
+2022-03-31 23:00:53.5191 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Search" text input (0.038s)
+2022-03-31 23:00:53.5192 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Search" text input (0.122s)
+2022-03-31 23:00:53.5194  INFO < Set "htc" to "Search" text input (0.122s)
+2022-03-31 23:00:53.5197  INFO > Click "Search" button
+2022-03-31 23:00:53.5201 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Search" button
+2022-03-31 23:00:53.5222 TRACE - - > Find visible elements by CSS selector "button-1 search-box-button" in ChromeDriver
+2022-03-31 23:00:58.5486 TRACE - - < Find visible elements by CSS selector "button-1 search-box-button" in ChromeDriver (5.026s) >> []
+2022-03-31 23:00:58.5546 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Search" button (5.033s) >> OpenQA.Selenium.NoSuchElementException: Unable to locate visible "Search" button element:...
+2022-03-31 23:00:58.5586  INFO < Click "Search" button (5.038s) >> OpenQA.Selenium.NoSuchElementException: Unable to locate visible "Search" button element:...
+2022-03-31 23:00:58.6096  INFO > Clean up AtataContext
+2022-03-31 23:00:58.6108 TRACE - > Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-03-31 23:00:58.6119 TRACE - < Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent (0.001s)
+2022-03-31 23:00:58.6220 TRACE - > Execute event handler TakeScreenshotOnNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-03-31 23:00:58.6233 TRACE - < Execute event handler TakeScreenshotOnNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent (0.001s)
+2022-03-31 23:00:58.6249 TRACE - > Execute event handler LogNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-03-31 23:00:58.6278 ERROR - - OpenQA.Selenium.NoSuchElementException : Unable to locate visible "Search" button element:
+- By: CSS selector "button-1 search-box-button"
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.StrategyScopeLocatorExecutor.ResolveResult(ComponentScopeLocateResult result, ISearchContext scopeSource, ComponentScopeLocateOptions scopeLocateOptions, SearchOptions searchOptions)
+   at Atata.StrategyScopeLocatorExecutor.Execute(StrategyScopeLocatorExecutionData executionData)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.get_Scope()
+   at Atata.ClicksUsingClickMethodAttribute.Execute[TOwner](IUIComponent`1 component)
+   at Atata.Control`1.<OnClick>b__14_0(ClickBehaviorAttribute x)
+   at Atata.UIComponent.<>c__DisplayClass61_0`1.<ExecuteBehavior>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.UIComponent.ExecuteBehavior[TBehaviorAttribute](Action`1 behaviorExecutionAction)
+   at Atata.Control`1.OnClick()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.Control`1.Click()
+   at AtataSamples.FixtureReusingDriver.UserStory_1.Home_Page_Search_Using_First_Characters_Of_Name() in C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\UserStory_1.cs:line 26
+2022-03-31 23:00:58.6283 TRACE - < Execute event handler LogNUnitErrorOnCleanUpEventHandler on AtataContextCleanUpEvent (0.003s)
+2022-03-31 23:00:58.6331  INFO < Clean up AtataContext (0.023s)
+2022-03-31 23:00:58.6334  INFO Finished test (6.085s)
+2022-03-31 23:00:58.6336  INFO Pure test execution time: 6.051s

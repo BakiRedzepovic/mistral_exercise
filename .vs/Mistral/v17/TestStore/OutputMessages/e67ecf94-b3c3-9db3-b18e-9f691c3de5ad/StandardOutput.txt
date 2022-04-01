@@ -1,0 +1,61 @@
+2022-04-01 09:53:45.8161  INFO Starting test: Mistal.FixtureReusingDriver.SmokeTestLogin.Login_Page_Password_Should_Alert_If_Invalid
+2022-04-01 09:53:45.8163 TRACE > Set up AtataContext
+2022-04-01 09:53:45.8164 TRACE - Set: BaseUrl=https://demo.nopcommerce.com
+2022-04-01 09:53:45.8165 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2022-04-01 09:53:45.8166 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2022-04-01 09:53:45.8167 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2022-04-01 09:53:45.8168 TRACE - Set: Culture=en-US
+2022-04-01 09:53:45.8172 TRACE - Set: Artifacts=C:\Users\hhh\Desktop\FixtureReusingDriver\AtataSamples.FixtureReusingDriver\bin\Debug\netcoreapp3.1\artifacts\2022-04-01 09_53_43\SmokeTestLogin\Login_Page_Password_Should_Alert_If_Invalid
+2022-04-01 09:53:45.8176 TRACE - Set: DriverService=ChromeDriverService on port 65513
+2022-04-01 09:53:46.9430 TRACE - Set: Driver=ChromeDriver (alias=chrome)
+2022-04-01 09:53:46.9439 TRACE < Set up AtataContext (1.127s)
+2022-04-01 09:53:46.9446  INFO Go to "Sign In" page
+2022-04-01 09:53:46.9489  INFO Go to URL "https://demo.nopcommerce.com/login"
+2022-04-01 09:53:48.2569 TRACE > Execute trigger VerifyH1Attribute { Index=-1, Values="Welcome, Please Sign In!", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page
+2022-04-01 09:53:48.2591  INFO - > Assert: "Welcome, Please Sign In!" <h1> heading should be present
+2022-04-01 09:53:48.2601 TRACE - - > Find visible element by XPath ".//h1[normalize-space(.) = 'Welcome, Please Sign In!']" in ChromeDriver
+2022-04-01 09:53:48.2953 TRACE - - < Find visible element by XPath ".//h1[normalize-space(.) = 'Welcome, Please Sign In!']" in ChromeDriver (0.035s) >> Element { Id=58273216-8ac3-4095-bb39-dda2e820b29e }
+2022-04-01 09:53:48.2958  INFO - < Assert: "Welcome, Please Sign In!" <h1> heading should be present (0.036s)
+2022-04-01 09:53:48.2960 TRACE < Execute trigger VerifyH1Attribute { Index=-1, Values="Welcome, Please Sign In!", Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page (0.039s)
+2022-04-01 09:53:48.2964  INFO > Set "bakir@mail.com" to "Email" email input
+2022-04-01 09:53:48.2967 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" email input
+2022-04-01 09:53:48.2970 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Email" email input
+2022-04-01 09:53:48.2981 TRACE - - - > Find visible element by XPath ".//*[normalize-space(@id) = 'Email']/descendant-or-self::input[@type='email']" in ChromeDriver
+2022-04-01 09:53:48.3250 TRACE - - - < Find visible element by XPath ".//*[normalize-space(@id) = 'Email']/descendant-or-self::input[@type='email']" in ChromeDriver (0.026s) >> Element { Id=77a5cea7-8eb5-471f-a06b-96a0c328a7cd }
+2022-04-01 09:53:48.3254 TRACE - - - > Clear element { Id=77a5cea7-8eb5-471f-a06b-96a0c328a7cd }
+2022-04-01 09:53:48.3710 TRACE - - - < Clear element { Id=77a5cea7-8eb5-471f-a06b-96a0c328a7cd } (0.045s)
+2022-04-01 09:53:48.3712 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Email" email input (0.074s)
+2022-04-01 09:53:48.3715 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Email" email input
+2022-04-01 09:53:48.3717 TRACE - - - > Send keys "bakir@mail.com" to element { Id=77a5cea7-8eb5-471f-a06b-96a0c328a7cd }
+2022-04-01 09:53:48.4114 TRACE - - - < Send keys "bakir@mail.com" to element { Id=77a5cea7-8eb5-471f-a06b-96a0c328a7cd } (0.039s)
+2022-04-01 09:53:48.4116 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Email" email input (0.040s)
+2022-04-01 09:53:48.4118 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" email input (0.115s)
+2022-04-01 09:53:48.4119  INFO < Set "bakir@mail.com" to "Email" email input (0.115s)
+2022-04-01 09:53:48.4123  INFO > Set "xkunnztlmcdawwy" to "Password" password input
+2022-04-01 09:53:48.4125 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input
+2022-04-01 09:53:48.4127 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input
+2022-04-01 09:53:48.4132 TRACE - - - > Find visible element by XPath ".//*[normalize-space(@id) = 'Password']/descendant-or-self::input[@type='password']" in ChromeDriver
+2022-04-01 09:53:48.4349 TRACE - - - < Find visible element by XPath ".//*[normalize-space(@id) = 'Password']/descendant-or-self::input[@type='password']" in ChromeDriver (0.021s) >> Element { Id=58a2bcc9-4285-4648-84e0-d48f92f76f6b }
+2022-04-01 09:53:48.4353 TRACE - - - > Clear element { Id=58a2bcc9-4285-4648-84e0-d48f92f76f6b }
+2022-04-01 09:53:48.4603 TRACE - - - < Clear element { Id=58a2bcc9-4285-4648-84e0-d48f92f76f6b } (0.025s)
+2022-04-01 09:53:48.4606 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input (0.047s)
+2022-04-01 09:53:48.4609 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input
+2022-04-01 09:53:48.4611 TRACE - - - > Send keys "xkunnztlmcdawwy" to element { Id=58a2bcc9-4285-4648-84e0-d48f92f76f6b }
+2022-04-01 09:53:48.5123 TRACE - - - < Send keys "xkunnztlmcdawwy" to element { Id=58a2bcc9-4285-4648-84e0-d48f92f76f6b } (0.051s)
+2022-04-01 09:53:48.5126 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input (0.051s)
+2022-04-01 09:53:48.5127 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input (0.100s)
+2022-04-01 09:53:48.5128  INFO < Set "xkunnztlmcdawwy" to "Password" password input (0.100s)
+2022-04-01 09:53:48.5131  INFO > Click "Login" button
+2022-04-01 09:53:48.5133 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Login" button
+2022-04-01 09:53:48.5139 TRACE - - > Find visible element by XPath ".//*[contains(concat(' ', normalize-space(@class), ' '), ' login-button ')]/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver
+2022-04-01 09:53:48.5343 TRACE - - < Find visible element by XPath ".//*[contains(concat(' ', normalize-space(@class), ' '), ' login-button ')]/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver (0.020s) >> Element { Id=b26c5f13-1b7f-4e36-a3b9-15438417741b }
+2022-04-01 09:53:48.5347 TRACE - - > Click element { Id=b26c5f13-1b7f-4e36-a3b9-15438417741b }
+2022-04-01 09:53:48.9917 TRACE - - < Click element { Id=b26c5f13-1b7f-4e36-a3b9-15438417741b } (0.456s)
+2022-04-01 09:53:48.9924 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Login" button (0.479s)
+2022-04-01 09:53:48.9925  INFO < Click "Login" button (0.479s)
+2022-04-01 09:53:48.9929  INFO > Clean up AtataContext
+2022-04-01 09:53:48.9931 TRACE - > Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent
+2022-04-01 09:53:48.9934 TRACE - < Execute event handler AddArtifactsToNUnitTestContextOnCleanUpEventHandler on AtataContextCleanUpEvent (0.000s)
+2022-04-01 09:53:49.1127  INFO < Clean up AtataContext (0.119s)
+2022-04-01 09:53:49.1130  INFO Finished test (3.297s)
+2022-04-01 09:53:49.1131  INFO Pure test execution time: 2.048s
